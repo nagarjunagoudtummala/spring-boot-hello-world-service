@@ -18,7 +18,7 @@ public class HelloWorldController {
     @RequestMapping(value = "/", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> hello() {
         LOGGER.info("Invoked HelloWorldController.java # hello() method");
-        String message = "Hello Openshift";
+        String message = "Hello Openshift World";
         ResponseEntity<String> responseEntity = new ResponseEntity<String>(message, HttpStatus.OK);
         LOGGER.info("Exited HelloWorldController.java # hello() method");
         return responseEntity;
